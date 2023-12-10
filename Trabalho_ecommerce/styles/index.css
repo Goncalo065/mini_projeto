@@ -1,0 +1,163 @@
+body{
+    background-color: rgba(17, 0, 61, 0.625);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    }
+
+.menu_i{
+    width: 50px;
+    margin-left: 20px;
+    display: none;
+}
+
+.Hero_favicon{
+width: 100%;
+}
+
+.hero_navbar{
+display: flex;
+align-items: center;
+pad: 20px;
+}
+
+.hero_image{
+border-image: auto;
+border-radius: 12px ;
+}
+
+a{
+color: rgb(24, 23, 23);
+text-decoration: none;
+}
+
+
+nav{
+flex: 1;
+text-align: right;
+}
+
+
+nav ul li{
+display: inline-block;
+margin: 25px;
+list-style-type: none;
+}
+
+.hero_box{
+margin: auto;
+width: 1300px;
+padding-left: 25px;
+padding-right: 25px;
+
+}
+
+p{
+color:rgb(24, 23, 23) ;
+}
+
+.hero_part_1{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero_part_1_1{
+flex-basis: 50%;
+min-width: 300px;
+}
+
+.hero_part_1_1 img{
+max-width: 100%;
+padding: 50px 0;
+}
+.hero_part_1 h1{
+font-size: 50px;
+line-height: 62px;
+margin: 25px 0;
+font-family: "Roboto";
+font-style: bold;
+}
+
+.hero_button{
+display: inline-block;
+background-color: #be1840;
+color: #ffffff;
+padding: 8px 30px;
+border-radius: 30px;
+transition: background 0.5s;
+}
+
+.hero_button:hover{
+background: #3618be;
+
+}
+
+
+@media only screen and (max-width:1024px){
+
+
+    .hero_part_1_1{
+        width: auto;
+        align-items: center;
+    }
+
+
+    nav ul {
+        position: fixed;
+        right: 0px;
+        top: 70px;
+        left: 0;
+        background: #33333300;
+        width: 100%;
+        
+        
+    
+    }
+    svg{
+        opacity: 0;
+    }
+
+
+
+    nav ul li {
+    display: block;
+    padding-right: 30px;
+ }
+    
+    nav ul li a {
+    color: #000000;
+    
+    }
+    
+    .menu_i{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hero_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    }
+    
+    @media only screen and (max-width:600px){
+        .hero_part_1{
+            text-align:center;
+    
+        }
+    
+        .hero_part_1_1{
+    
+            flex-basis: 100%;
+        }
+        .hero_container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }
